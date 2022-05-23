@@ -19,18 +19,18 @@ let quotes = [
 ];
 let i = 0;
 // Call APi
-async function getQuotes() {
-  const apiUrl = "https://type.fit/api/quotes";
-  try {
-    const res = await fetch(apiUrl);
-    quotes = await res.json();
-    newQuote();
-    loader.hidden = true;
-    quoteContainer.hidden = false;
-  } catch (error) {
-    console.log(error);
-  }
-}
+// async function getQuotes() {
+//   const apiUrl = "https://type.fit/api/quotes";
+//   try {
+//     const res = await fetch(apiUrl);
+//     quotes = await res.json();
+//     newQuote();
+//     loader.hidden = true;
+//     quoteContainer.hidden = false;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 // Make new quote
 function newQuote() {
